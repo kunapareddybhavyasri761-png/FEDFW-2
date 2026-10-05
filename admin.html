@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Admin Dashboard</h1>
+
+    <nav>
+        <a href="index.html">Portfolio</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+
+</header>
+
+<section>
+
+    <h2>Add New Project</h2>
+
+    <div class="admin-form">
+
+        <input type="text"
+               id="projectTitle"
+               placeholder="Project Title">
+
+        <textarea id="projectDescription"
+                  placeholder="Project Description"></textarea>
+
+        <button onclick="addProject()">
+            Add Project
+        </button>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Projects</h2>
+
+    <div id="adminProjects" class="grid"></div>
+
+</section>
+
+<section>
+
+    <h2>Contact Messages</h2>
+
+    <div id="messages"></div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
